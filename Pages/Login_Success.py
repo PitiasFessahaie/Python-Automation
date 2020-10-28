@@ -1,6 +1,3 @@
-from selenium import webdriver
-import unittest
-import HTMLTestRunner
 import logging
 
 
@@ -21,3 +18,4 @@ class Login_Success:
         self.driver.find_element_by_css_selector(self.password).send_keys(password)
         logging.info('clicking the submit button')
         self.driver.find_element_by_css_selector(self.login).click()
+

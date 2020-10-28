@@ -1,6 +1,11 @@
 from selenium import webdriver
+from selenium.webdriver import ActionChains
+
 from Pages.Login_Success import Login_Success
 from Pages.Login_Failure import Login_fail
+from Pages.Check_Box import Check_Box
+from Pages.Context_Menu import Context_Menu
+from Pages.Drag_and_Drop import DragDrop
 import unittest
 import logging
 import time
@@ -30,18 +35,39 @@ class SmokeTest(unittest.TestCase):
         cls.driver.quit()
 
     def test_LoginSuccess(self):
-        driver = self.driver
-        lp = Login_Success(driver)
+        lp = Login_Success(self.driver)
         lp.test_login(self.username, self.password)
         time.sleep(3)
-        self.assertEqual(driver.current_url, self.success_url)
+        self.assertEqual(self.driver.current_url, self.success_url)
 
     def test_LoginFailure(self):
-        driver = self.driver
-        lf = Login_fail(driver)
+        lf = Login_fail(self.driver)
         lf.test_login_fail(self.username, 'password!')
         time.sleep(3)
-        self.assertNotEqual(driver.current_url, self.success_url)
+        self.assertNotEqual(self.driver.current_url, self.success_url)
+
+    def test_Checkbox(self):
+        ch = Check_Box(self.driver)
+        ch.test_checkBox()
+        time.sleep(3)
+
+    def test_ContextMenu(self):
+        cm = Context_Menu(self.driver)
+        cm.ContextMenu()
+        time.sleep(3)
+        self.assertEqual(self.driver.switch_to.alert.text, 'You selected a context menu')
+        self.driver.switch_to.alert.accept()
+
+    def test_Drag_Drop(self):
+        dd = DragDrop(self.driver)
+        dd.Drag_Drop()
+        time.sleep(3)
+        if self.driver.find_element_by_css_selector('#column-b').text == 'A':
+            print('The Box dragged Successfully')
+        else:
+            print('The Box is not dragged Successful')
+
+
 
 
 if __name__ == '__main__':
