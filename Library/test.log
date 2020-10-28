@@ -1,0 +1,167 @@
+10/28/2020 02:18:34 PM:DEBUG:POST http://127.0.0.1:60229/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+10/28/2020 02:18:34 PM:DEBUG:Starting new HTTP connection (1): 127.0.0.1:60229
+10/28/2020 02:18:35 PM:DEBUG:http://127.0.0.1:60229 "POST /session HTTP/1.1" 200 728
+10/28/2020 02:18:35 PM:DEBUG:Finished Request
+10/28/2020 02:18:35 PM:DEBUG:POST http://127.0.0.1:60229/session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/window/maximize {}
+10/28/2020 02:18:36 PM:DEBUG:http://127.0.0.1:60229 "POST /session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/window/maximize HTTP/1.1" 200 51
+10/28/2020 02:18:36 PM:DEBUG:Finished Request
+10/28/2020 02:18:36 PM:DEBUG:POST http://127.0.0.1:60229/session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/timeouts {"implicit": 10000}
+10/28/2020 02:18:36 PM:DEBUG:http://127.0.0.1:60229 "POST /session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/timeouts HTTP/1.1" 200 14
+10/28/2020 02:18:36 PM:DEBUG:Finished Request
+10/28/2020 02:18:36 PM:DEBUG:POST http://127.0.0.1:60229/session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/timeouts {"pageLoad": 10000}
+10/28/2020 02:18:36 PM:DEBUG:http://127.0.0.1:60229 "POST /session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/timeouts HTTP/1.1" 200 14
+10/28/2020 02:18:36 PM:DEBUG:Finished Request
+10/28/2020 02:18:36 PM:DEBUG:DELETE http://127.0.0.1:60229/session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/cookie {}
+10/28/2020 02:18:36 PM:DEBUG:http://127.0.0.1:60229 "DELETE /session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/cookie HTTP/1.1" 200 14
+10/28/2020 02:18:36 PM:DEBUG:Finished Request
+10/28/2020 02:18:36 PM:DEBUG:POST http://127.0.0.1:60229/session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/url {"url": "http://localhost:7080/login"}
+10/28/2020 02:18:36 PM:DEBUG:http://127.0.0.1:60229 "POST /session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/url HTTP/1.1" 200 14
+10/28/2020 02:18:36 PM:DEBUG:Finished Request
+10/28/2020 02:18:36 PM:DEBUG:POST http://127.0.0.1:60229/session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/element {"using": "css selector", "value": "#username"}
+10/28/2020 02:18:36 PM:DEBUG:http://127.0.0.1:60229 "POST /session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/element HTTP/1.1" 200 88
+10/28/2020 02:18:36 PM:DEBUG:Finished Request
+10/28/2020 02:18:36 PM:DEBUG:POST http://127.0.0.1:60229/session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/element/5b489c0b-db2d-4ba4-9b36-e4bef55ebbcf/value {"text": "tomsmith", "value": ["t", "o", "m", "s", "m", "i", "t", "h"], "id": "5b489c0b-db2d-4ba4-9b36-e4bef55ebbcf"}
+10/28/2020 02:18:36 PM:DEBUG:http://127.0.0.1:60229 "POST /session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/element/5b489c0b-db2d-4ba4-9b36-e4bef55ebbcf/value HTTP/1.1" 200 14
+10/28/2020 02:18:36 PM:DEBUG:Finished Request
+10/28/2020 02:18:36 PM:DEBUG:POST http://127.0.0.1:60229/session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/element {"using": "css selector", "value": "#password"}
+10/28/2020 02:18:36 PM:DEBUG:http://127.0.0.1:60229 "POST /session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/element HTTP/1.1" 200 88
+10/28/2020 02:18:36 PM:DEBUG:Finished Request
+10/28/2020 02:18:36 PM:DEBUG:POST http://127.0.0.1:60229/session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/element/2874fbd3-1968-4d92-9e87-d487644a64b9/value {"text": "password!", "value": ["p", "a", "s", "s", "w", "o", "r", "d", "!"], "id": "2874fbd3-1968-4d92-9e87-d487644a64b9"}
+10/28/2020 02:18:36 PM:DEBUG:http://127.0.0.1:60229 "POST /session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/element/2874fbd3-1968-4d92-9e87-d487644a64b9/value HTTP/1.1" 200 14
+10/28/2020 02:18:36 PM:DEBUG:Finished Request
+10/28/2020 02:18:36 PM:DEBUG:POST http://127.0.0.1:60229/session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/element {"using": "css selector", "value": ".radius"}
+10/28/2020 02:18:36 PM:DEBUG:http://127.0.0.1:60229 "POST /session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/element HTTP/1.1" 200 88
+10/28/2020 02:18:36 PM:DEBUG:Finished Request
+10/28/2020 02:18:36 PM:DEBUG:POST http://127.0.0.1:60229/session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/element/9ed24cab-243b-4404-abb3-2fe2ef44213d/click {"id": "9ed24cab-243b-4404-abb3-2fe2ef44213d"}
+10/28/2020 02:18:36 PM:DEBUG:http://127.0.0.1:60229 "POST /session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/element/9ed24cab-243b-4404-abb3-2fe2ef44213d/click HTTP/1.1" 200 14
+10/28/2020 02:18:36 PM:DEBUG:Finished Request
+10/28/2020 02:18:39 PM:DEBUG:GET http://127.0.0.1:60229/session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/url {}
+10/28/2020 02:18:39 PM:DEBUG:http://127.0.0.1:60229 "GET /session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/url HTTP/1.1" 200 39
+10/28/2020 02:18:39 PM:DEBUG:Finished Request
+10/28/2020 02:18:39 PM:DEBUG:DELETE http://127.0.0.1:60229/session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/window {}
+10/28/2020 02:18:39 PM:DEBUG:http://127.0.0.1:60229 "DELETE /session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3/window HTTP/1.1" 200 12
+10/28/2020 02:18:39 PM:DEBUG:Finished Request
+10/28/2020 02:18:39 PM:DEBUG:DELETE http://127.0.0.1:60229/session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3 {}
+10/28/2020 02:18:39 PM:DEBUG:http://127.0.0.1:60229 "DELETE /session/b4cb3bc9d0b1266cbac23cbb8b5ddbc3 HTTP/1.1" 200 14
+10/28/2020 02:18:39 PM:DEBUG:Finished Request
+10/28/2020 02:18:40 PM:DEBUG:POST http://127.0.0.1:60299/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+10/28/2020 02:18:40 PM:DEBUG:Starting new HTTP connection (1): 127.0.0.1:60299
+10/28/2020 02:18:41 PM:DEBUG:http://127.0.0.1:60299 "POST /session HTTP/1.1" 200 728
+10/28/2020 02:18:41 PM:DEBUG:Finished Request
+10/28/2020 02:18:41 PM:DEBUG:POST http://127.0.0.1:60299/session/e7e1a32f1a40a20367900e9b1d593b8d/window/maximize {}
+10/28/2020 02:18:41 PM:DEBUG:http://127.0.0.1:60299 "POST /session/e7e1a32f1a40a20367900e9b1d593b8d/window/maximize HTTP/1.1" 200 51
+10/28/2020 02:18:41 PM:DEBUG:Finished Request
+10/28/2020 02:18:41 PM:DEBUG:POST http://127.0.0.1:60299/session/e7e1a32f1a40a20367900e9b1d593b8d/timeouts {"implicit": 10000}
+10/28/2020 02:18:41 PM:DEBUG:http://127.0.0.1:60299 "POST /session/e7e1a32f1a40a20367900e9b1d593b8d/timeouts HTTP/1.1" 200 14
+10/28/2020 02:18:41 PM:DEBUG:Finished Request
+10/28/2020 02:18:41 PM:DEBUG:POST http://127.0.0.1:60299/session/e7e1a32f1a40a20367900e9b1d593b8d/timeouts {"pageLoad": 10000}
+10/28/2020 02:18:41 PM:DEBUG:http://127.0.0.1:60299 "POST /session/e7e1a32f1a40a20367900e9b1d593b8d/timeouts HTTP/1.1" 200 14
+10/28/2020 02:18:41 PM:DEBUG:Finished Request
+10/28/2020 02:18:41 PM:DEBUG:DELETE http://127.0.0.1:60299/session/e7e1a32f1a40a20367900e9b1d593b8d/cookie {}
+10/28/2020 02:18:41 PM:DEBUG:http://127.0.0.1:60299 "DELETE /session/e7e1a32f1a40a20367900e9b1d593b8d/cookie HTTP/1.1" 200 14
+10/28/2020 02:18:41 PM:DEBUG:Finished Request
+10/28/2020 02:18:41 PM:DEBUG:POST http://127.0.0.1:60299/session/e7e1a32f1a40a20367900e9b1d593b8d/url {"url": "http://localhost:7080/login"}
+10/28/2020 02:18:41 PM:DEBUG:http://127.0.0.1:60299 "POST /session/e7e1a32f1a40a20367900e9b1d593b8d/url HTTP/1.1" 200 14
+10/28/2020 02:18:41 PM:DEBUG:Finished Request
+10/28/2020 02:18:41 PM:DEBUG:DELETE http://127.0.0.1:60299/session/e7e1a32f1a40a20367900e9b1d593b8d/window {}
+10/28/2020 02:18:41 PM:DEBUG:http://127.0.0.1:60299 "DELETE /session/e7e1a32f1a40a20367900e9b1d593b8d/window HTTP/1.1" 200 12
+10/28/2020 02:18:41 PM:DEBUG:Finished Request
+10/28/2020 02:18:41 PM:DEBUG:DELETE http://127.0.0.1:60299/session/e7e1a32f1a40a20367900e9b1d593b8d {}
+10/28/2020 02:18:41 PM:DEBUG:http://127.0.0.1:60299 "DELETE /session/e7e1a32f1a40a20367900e9b1d593b8d HTTP/1.1" 200 14
+10/28/2020 02:18:41 PM:DEBUG:Finished Request
+10/28/2020 02:21:17 PM:DEBUG:POST http://127.0.0.1:61047/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+10/28/2020 02:21:17 PM:DEBUG:Starting new HTTP connection (1): 127.0.0.1:61047
+10/28/2020 02:21:18 PM:DEBUG:http://127.0.0.1:61047 "POST /session HTTP/1.1" 200 728
+10/28/2020 02:21:18 PM:DEBUG:Finished Request
+10/28/2020 02:21:18 PM:DEBUG:POST http://127.0.0.1:61047/session/70f849abd2b5aedce22a8a6d0d1df101/window/maximize {}
+10/28/2020 02:21:18 PM:DEBUG:http://127.0.0.1:61047 "POST /session/70f849abd2b5aedce22a8a6d0d1df101/window/maximize HTTP/1.1" 200 51
+10/28/2020 02:21:18 PM:DEBUG:Finished Request
+10/28/2020 02:21:18 PM:DEBUG:POST http://127.0.0.1:61047/session/70f849abd2b5aedce22a8a6d0d1df101/timeouts {"implicit": 10000}
+10/28/2020 02:21:18 PM:DEBUG:http://127.0.0.1:61047 "POST /session/70f849abd2b5aedce22a8a6d0d1df101/timeouts HTTP/1.1" 200 14
+10/28/2020 02:21:18 PM:DEBUG:Finished Request
+10/28/2020 02:21:18 PM:DEBUG:POST http://127.0.0.1:61047/session/70f849abd2b5aedce22a8a6d0d1df101/timeouts {"pageLoad": 10000}
+10/28/2020 02:21:18 PM:DEBUG:http://127.0.0.1:61047 "POST /session/70f849abd2b5aedce22a8a6d0d1df101/timeouts HTTP/1.1" 200 14
+10/28/2020 02:21:18 PM:DEBUG:Finished Request
+10/28/2020 02:21:18 PM:DEBUG:DELETE http://127.0.0.1:61047/session/70f849abd2b5aedce22a8a6d0d1df101/cookie {}
+10/28/2020 02:21:18 PM:DEBUG:http://127.0.0.1:61047 "DELETE /session/70f849abd2b5aedce22a8a6d0d1df101/cookie HTTP/1.1" 200 14
+10/28/2020 02:21:18 PM:DEBUG:Finished Request
+10/28/2020 02:21:18 PM:DEBUG:POST http://127.0.0.1:61047/session/70f849abd2b5aedce22a8a6d0d1df101/url {"url": "http://localhost:7080/login"}
+10/28/2020 02:21:19 PM:DEBUG:http://127.0.0.1:61047 "POST /session/70f849abd2b5aedce22a8a6d0d1df101/url HTTP/1.1" 200 14
+10/28/2020 02:21:19 PM:DEBUG:Finished Request
+10/28/2020 02:21:19 PM:INFO:adding username and password
+10/28/2020 02:21:19 PM:DEBUG:POST http://127.0.0.1:61047/session/70f849abd2b5aedce22a8a6d0d1df101/element {"using": "css selector", "value": "#username"}
+10/28/2020 02:21:19 PM:DEBUG:http://127.0.0.1:61047 "POST /session/70f849abd2b5aedce22a8a6d0d1df101/element HTTP/1.1" 200 88
+10/28/2020 02:21:19 PM:DEBUG:Finished Request
+10/28/2020 02:21:19 PM:DEBUG:POST http://127.0.0.1:61047/session/70f849abd2b5aedce22a8a6d0d1df101/element/0c63d4ff-f751-4771-8ee4-43178e81e3d0/value {"text": "tomsmith", "value": ["t", "o", "m", "s", "m", "i", "t", "h"], "id": "0c63d4ff-f751-4771-8ee4-43178e81e3d0"}
+10/28/2020 02:21:19 PM:DEBUG:http://127.0.0.1:61047 "POST /session/70f849abd2b5aedce22a8a6d0d1df101/element/0c63d4ff-f751-4771-8ee4-43178e81e3d0/value HTTP/1.1" 200 14
+10/28/2020 02:21:19 PM:DEBUG:Finished Request
+10/28/2020 02:21:19 PM:DEBUG:POST http://127.0.0.1:61047/session/70f849abd2b5aedce22a8a6d0d1df101/element {"using": "css selector", "value": "#password"}
+10/28/2020 02:21:19 PM:DEBUG:http://127.0.0.1:61047 "POST /session/70f849abd2b5aedce22a8a6d0d1df101/element HTTP/1.1" 200 88
+10/28/2020 02:21:19 PM:DEBUG:Finished Request
+10/28/2020 02:21:19 PM:DEBUG:POST http://127.0.0.1:61047/session/70f849abd2b5aedce22a8a6d0d1df101/element/a8fe6066-5758-4617-953c-0d91b8039376/value {"text": "password!", "value": ["p", "a", "s", "s", "w", "o", "r", "d", "!"], "id": "a8fe6066-5758-4617-953c-0d91b8039376"}
+10/28/2020 02:21:19 PM:DEBUG:http://127.0.0.1:61047 "POST /session/70f849abd2b5aedce22a8a6d0d1df101/element/a8fe6066-5758-4617-953c-0d91b8039376/value HTTP/1.1" 200 14
+10/28/2020 02:21:19 PM:DEBUG:Finished Request
+10/28/2020 02:21:19 PM:INFO:clicking the submit button
+10/28/2020 02:21:19 PM:DEBUG:POST http://127.0.0.1:61047/session/70f849abd2b5aedce22a8a6d0d1df101/element {"using": "css selector", "value": ".radius"}
+10/28/2020 02:21:19 PM:DEBUG:http://127.0.0.1:61047 "POST /session/70f849abd2b5aedce22a8a6d0d1df101/element HTTP/1.1" 200 88
+10/28/2020 02:21:19 PM:DEBUG:Finished Request
+10/28/2020 02:21:19 PM:DEBUG:POST http://127.0.0.1:61047/session/70f849abd2b5aedce22a8a6d0d1df101/element/4d1cc8a5-403e-45c4-a47a-2cd364ad6c98/click {"id": "4d1cc8a5-403e-45c4-a47a-2cd364ad6c98"}
+10/28/2020 02:21:19 PM:DEBUG:http://127.0.0.1:61047 "POST /session/70f849abd2b5aedce22a8a6d0d1df101/element/4d1cc8a5-403e-45c4-a47a-2cd364ad6c98/click HTTP/1.1" 200 14
+10/28/2020 02:21:19 PM:DEBUG:Finished Request
+10/28/2020 02:21:22 PM:DEBUG:GET http://127.0.0.1:61047/session/70f849abd2b5aedce22a8a6d0d1df101/url {}
+10/28/2020 02:21:22 PM:DEBUG:http://127.0.0.1:61047 "GET /session/70f849abd2b5aedce22a8a6d0d1df101/url HTTP/1.1" 200 39
+10/28/2020 02:21:22 PM:DEBUG:Finished Request
+10/28/2020 02:21:22 PM:DEBUG:DELETE http://127.0.0.1:61047/session/70f849abd2b5aedce22a8a6d0d1df101/window {}
+10/28/2020 02:21:22 PM:DEBUG:http://127.0.0.1:61047 "DELETE /session/70f849abd2b5aedce22a8a6d0d1df101/window HTTP/1.1" 200 12
+10/28/2020 02:21:22 PM:DEBUG:Finished Request
+10/28/2020 02:21:22 PM:DEBUG:DELETE http://127.0.0.1:61047/session/70f849abd2b5aedce22a8a6d0d1df101 {}
+10/28/2020 02:21:22 PM:DEBUG:http://127.0.0.1:61047 "DELETE /session/70f849abd2b5aedce22a8a6d0d1df101 HTTP/1.1" 200 14
+10/28/2020 02:21:22 PM:DEBUG:Finished Request
+10/28/2020 02:21:23 PM:DEBUG:POST http://127.0.0.1:61108/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+10/28/2020 02:21:23 PM:DEBUG:Starting new HTTP connection (1): 127.0.0.1:61108
+10/28/2020 02:21:24 PM:DEBUG:http://127.0.0.1:61108 "POST /session HTTP/1.1" 200 728
+10/28/2020 02:21:24 PM:DEBUG:Finished Request
+10/28/2020 02:21:24 PM:DEBUG:POST http://127.0.0.1:61108/session/6909ba811372eb3dac681e2575db8372/window/maximize {}
+10/28/2020 02:21:24 PM:DEBUG:http://127.0.0.1:61108 "POST /session/6909ba811372eb3dac681e2575db8372/window/maximize HTTP/1.1" 200 51
+10/28/2020 02:21:24 PM:DEBUG:Finished Request
+10/28/2020 02:21:24 PM:DEBUG:POST http://127.0.0.1:61108/session/6909ba811372eb3dac681e2575db8372/timeouts {"implicit": 10000}
+10/28/2020 02:21:24 PM:DEBUG:http://127.0.0.1:61108 "POST /session/6909ba811372eb3dac681e2575db8372/timeouts HTTP/1.1" 200 14
+10/28/2020 02:21:24 PM:DEBUG:Finished Request
+10/28/2020 02:21:24 PM:DEBUG:POST http://127.0.0.1:61108/session/6909ba811372eb3dac681e2575db8372/timeouts {"pageLoad": 10000}
+10/28/2020 02:21:24 PM:DEBUG:http://127.0.0.1:61108 "POST /session/6909ba811372eb3dac681e2575db8372/timeouts HTTP/1.1" 200 14
+10/28/2020 02:21:24 PM:DEBUG:Finished Request
+10/28/2020 02:21:24 PM:DEBUG:DELETE http://127.0.0.1:61108/session/6909ba811372eb3dac681e2575db8372/cookie {}
+10/28/2020 02:21:24 PM:DEBUG:http://127.0.0.1:61108 "DELETE /session/6909ba811372eb3dac681e2575db8372/cookie HTTP/1.1" 200 14
+10/28/2020 02:21:24 PM:DEBUG:Finished Request
+10/28/2020 02:21:24 PM:DEBUG:POST http://127.0.0.1:61108/session/6909ba811372eb3dac681e2575db8372/url {"url": "http://localhost:7080/login"}
+10/28/2020 02:21:24 PM:DEBUG:http://127.0.0.1:61108 "POST /session/6909ba811372eb3dac681e2575db8372/url HTTP/1.1" 200 14
+10/28/2020 02:21:24 PM:DEBUG:Finished Request
+10/28/2020 02:21:24 PM:INFO:adding username and password
+10/28/2020 02:21:24 PM:DEBUG:POST http://127.0.0.1:61108/session/6909ba811372eb3dac681e2575db8372/element {"using": "css selector", "value": "#username"}
+10/28/2020 02:21:24 PM:DEBUG:http://127.0.0.1:61108 "POST /session/6909ba811372eb3dac681e2575db8372/element HTTP/1.1" 200 88
+10/28/2020 02:21:24 PM:DEBUG:Finished Request
+10/28/2020 02:21:24 PM:DEBUG:POST http://127.0.0.1:61108/session/6909ba811372eb3dac681e2575db8372/element/94a1f0f8-5ea4-43c6-bbb3-de6d85077eba/value {"text": "tomsmith", "value": ["t", "o", "m", "s", "m", "i", "t", "h"], "id": "94a1f0f8-5ea4-43c6-bbb3-de6d85077eba"}
+10/28/2020 02:21:24 PM:DEBUG:http://127.0.0.1:61108 "POST /session/6909ba811372eb3dac681e2575db8372/element/94a1f0f8-5ea4-43c6-bbb3-de6d85077eba/value HTTP/1.1" 200 14
+10/28/2020 02:21:24 PM:DEBUG:Finished Request
+10/28/2020 02:21:24 PM:DEBUG:POST http://127.0.0.1:61108/session/6909ba811372eb3dac681e2575db8372/element {"using": "css selector", "value": "#password"}
+10/28/2020 02:21:24 PM:DEBUG:http://127.0.0.1:61108 "POST /session/6909ba811372eb3dac681e2575db8372/element HTTP/1.1" 200 88
+10/28/2020 02:21:24 PM:DEBUG:Finished Request
+10/28/2020 02:21:24 PM:DEBUG:POST http://127.0.0.1:61108/session/6909ba811372eb3dac681e2575db8372/element/112a790e-c895-4d2e-bed5-c028c7c6cd82/value {"text": "SuperSecretPassword!", "value": ["S", "u", "p", "e", "r", "S", "e", "c", "r", "e", "t", "P", "a", "s", "s", "w", "o", "r", "d", "!"], "id": "112a790e-c895-4d2e-bed5-c028c7c6cd82"}
+10/28/2020 02:21:24 PM:DEBUG:http://127.0.0.1:61108 "POST /session/6909ba811372eb3dac681e2575db8372/element/112a790e-c895-4d2e-bed5-c028c7c6cd82/value HTTP/1.1" 200 14
+10/28/2020 02:21:24 PM:DEBUG:Finished Request
+10/28/2020 02:21:24 PM:INFO:clicking the submit button
+10/28/2020 02:21:24 PM:DEBUG:POST http://127.0.0.1:61108/session/6909ba811372eb3dac681e2575db8372/element {"using": "css selector", "value": ".radius"}
+10/28/2020 02:21:24 PM:DEBUG:http://127.0.0.1:61108 "POST /session/6909ba811372eb3dac681e2575db8372/element HTTP/1.1" 200 88
+10/28/2020 02:21:24 PM:DEBUG:Finished Request
+10/28/2020 02:21:24 PM:DEBUG:POST http://127.0.0.1:61108/session/6909ba811372eb3dac681e2575db8372/element/cf869ab5-01ef-4197-b3a1-39f19b18b38a/click {"id": "cf869ab5-01ef-4197-b3a1-39f19b18b38a"}
+10/28/2020 02:21:24 PM:DEBUG:http://127.0.0.1:61108 "POST /session/6909ba811372eb3dac681e2575db8372/element/cf869ab5-01ef-4197-b3a1-39f19b18b38a/click HTTP/1.1" 200 14
+10/28/2020 02:21:24 PM:DEBUG:Finished Request
+10/28/2020 02:21:27 PM:DEBUG:GET http://127.0.0.1:61108/session/6909ba811372eb3dac681e2575db8372/url {}
+10/28/2020 02:21:27 PM:DEBUG:http://127.0.0.1:61108 "GET /session/6909ba811372eb3dac681e2575db8372/url HTTP/1.1" 200 40
+10/28/2020 02:21:27 PM:DEBUG:Finished Request
+10/28/2020 02:21:27 PM:DEBUG:DELETE http://127.0.0.1:61108/session/6909ba811372eb3dac681e2575db8372/window {}
+10/28/2020 02:21:28 PM:DEBUG:http://127.0.0.1:61108 "DELETE /session/6909ba811372eb3dac681e2575db8372/window HTTP/1.1" 200 12
+10/28/2020 02:21:28 PM:DEBUG:Finished Request
+10/28/2020 02:21:28 PM:DEBUG:DELETE http://127.0.0.1:61108/session/6909ba811372eb3dac681e2575db8372 {}
+10/28/2020 02:21:28 PM:DEBUG:http://127.0.0.1:61108 "DELETE /session/6909ba811372eb3dac681e2575db8372 HTTP/1.1" 200 14
+10/28/2020 02:21:28 PM:DEBUG:Finished Request
