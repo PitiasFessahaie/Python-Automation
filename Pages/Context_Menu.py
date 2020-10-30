@@ -1,13 +1,12 @@
 import logging
-from selenium.webdriver.remote.webelement import WebElement
-
+from Library.Locators import Locator
 from selenium.webdriver import ActionChains
 
 
 class Context_Menu:
 
-    context_url = 'http://localhost:7080/context_menu'
-    right_click = '#hot-spot'
+    context_url = Locator.context_url
+    right_click = Locator.right_click
 
     def __init__(self, driver):
         self.driver = driver

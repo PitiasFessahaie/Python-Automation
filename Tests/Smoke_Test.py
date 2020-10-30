@@ -1,11 +1,12 @@
 from selenium import webdriver
-from selenium.webdriver import ActionChains
-
+from selenium.webdriver.support.select import Select
+from Pages.Dynamic_Content import Dynamic_Content
 from Pages.Login_Success import Login_Success
 from Pages.Login_Failure import Login_fail
 from Pages.Check_Box import Check_Box
 from Pages.Context_Menu import Context_Menu
 from Pages.Drag_and_Drop import DragDrop
+from Pages.Drop_Down import Drop_Down
 import unittest
 import logging
 import time
@@ -33,6 +34,8 @@ class SmokeTest(unittest.TestCase):
     def tearDown(cls):
         cls.driver.close()
         cls.driver.quit()
+
+
 
     def test_LoginSuccess(self):
         lp = Login_Success(self.driver)
@@ -66,6 +69,22 @@ class SmokeTest(unittest.TestCase):
             print('The Box dragged Successfully')
         else:
             print('The Box is not dragged Successful')
+
+    def test_DropDown(self):
+        dd = Drop_Down(self.driver)
+        dd.dropDown()
+        time.sleep(2)
+
+    def test_dynamicContent(self):
+        dc = Dynamic_Content(self.driver)
+        list1 = dc.test_dynamicContent()
+        list2 = dc.test_dynamicContent()
+        # print(list1)
+        # print(list2)
+        self.assertNotEqual(list1, list2)
+
+
+
 
 
 
