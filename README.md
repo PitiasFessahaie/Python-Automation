@@ -48,7 +48,7 @@
 ## Submission Rubrics
 
 ### General Requirements
-1. All tests should contain @Test annotation.
+1. All tests should contain unittest class annotation.
 2. All tests should provide a setup and tear down mechanism that closes the browser.
 3. All tests should run successfully from IDE. Provide a way to run tests on unix based OS.
 
