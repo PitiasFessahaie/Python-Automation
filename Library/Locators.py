@@ -42,3 +42,11 @@ class Locator:
     enable_txt = "//p[@id='message']"
     disable_btn = (By.XPATH, "//*[@onclick='swapInput()']")
     disable_msg = "//p[@id='message']"
+
+    # IFrame
+    url_iframe = 'http://localhost:7080/iframe'
+    itext_field = '#tinymce'
+    # File Download
+    file_path = '/Users/pitiasfessahaie/Downloads/some-file.txt'
+    url_Filedownload = 'http://localhost:7080/download'
+    file = '//*[@id="content"]/div/a[1]'

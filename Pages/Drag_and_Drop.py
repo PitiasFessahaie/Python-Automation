@@ -5,6 +5,7 @@ from Library.BasePage import BasePage
 
 
 class DragDrop(BasePage):
+
     url = Locator.dd_url
     Abox = Locator.Abox
     Bbox = Locator.Bbox
