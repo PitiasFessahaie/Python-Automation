@@ -13,7 +13,7 @@ class Check_Box(BasePage):
         super().__init__(driver)
 
 
-    def test_checkBox(self):
+    def checkBox(self):
         self.driver.get(self.checkbox_url)
         ch1 = self.driver.find_element_by_xpath(self.checkbox1)
         ch2 = self.driver.find_element_by_xpath(self.checkbox2)

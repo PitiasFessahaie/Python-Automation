@@ -32,3 +32,13 @@ class Locator:
     # drop Down
     dropDown_url = 'http://localhost:7080/dropdown'
     dropDown_btn = '#dropdown'
+
+    # Dynamic_Control
+    url_dynamicControl = 'http://localhost:7080/dynamic_controls'
+    add_btn = (By.XPATH, "//*[@onclick='swapCheckbox()']")
+    add_msg = (By.XPATH, "//*[@type='checkbox']")
+    remove_btn = "//*[@id='checkbox-example']/button"
+    enable_btn = (By.XPATH, "//*[@onclick='swapCheckbox()']")
+    enable_txt = "//p[@id='message']"
+    disable_btn = (By.XPATH, "//*[@onclick='swapInput()']")
+    disable_msg = "//p[@id='message']"

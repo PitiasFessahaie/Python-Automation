@@ -29,6 +29,10 @@ class BasePage:
         elem = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator))
         return bool(elem)
 
+    def isnot_visible(self, by_locator):
+        elem = WebDriverWait(self.driver, 10).until(EC.invisibility_of_element_located(by_locator))
+        return bool(elem)
+
     def is_selected(self, by_locator):
         elem = WebDriverWait(self.driver, 10).until(EC.element_located_to_be_selected(by_locator))
         return bool(elem)
@@ -51,6 +55,11 @@ class BasePage:
     def drop_down(self, element, index):
         Select(element).select_by_index(index)
 
+    def javaScript_click(self, driver, elem):
+        driver.execute_script('arguments[0].click();', elem)
 
+    def scrollView(self, driver, elem):
+        driver.execute_script('arguments[0].ScrollIntoView(true)', elem)
 
-
+    def scrollPixel(self, driver):
+        self.driver.execute_script("window.scrollBy(0, -10);")

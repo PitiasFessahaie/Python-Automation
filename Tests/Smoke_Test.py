@@ -1,5 +1,21 @@
 from selenium import webdriver
-from selenium.webdriver.support.select import Select
+from selenium.common.exceptions import WebDriverException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.remote.utils import LOGGER
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+
+from Pages.Dynamic_Load import Dynamic_Load
+from Pages.Notification_Msg import Notification_Message
+from Pages.New_Tab import NewTab
+from Pages.Java_ScriptError import Java_ScriptError
+from Pages.Java_Alerts import JavaAlert
+from Pages.Mouse_Hover import MouseHover
+from Pages.Iframe import IFRAME
+from Pages.Floating_File import FloatingFile
+from Pages.File_Upload import File_Upload
+from Pages.File_Download import File_Download
+from Pages.Dynamic_Control import DynamicControls
 from Pages.Dynamic_Content import Dynamic_Content
 from Pages.Login_Success import Login_Success
 from Pages.Login_Failure import Login_fail
@@ -11,6 +27,10 @@ import unittest
 import logging
 import time
 from pyunitreport import HTMLTestRunner
+
+
+def assertEqual():
+    pass
 
 
 class SmokeTest(unittest.TestCase):
@@ -51,7 +71,7 @@ class SmokeTest(unittest.TestCase):
 
     def test_Checkbox(self):
         ch = Check_Box(self.driver)
-        ch.test_checkBox()
+        ch.checkBox()
         time.sleep(3)
 
     def test_ContextMenu(self):
@@ -83,10 +103,49 @@ class SmokeTest(unittest.TestCase):
         # print(list2)
         self.assertNotEqual(list1, list2)
 
+    def test_DynamicControl(self):
+        dc = DynamicControls(self.driver)
+        dc.dynamicContents()
 
+    def test_DynamicLoad(self):
+        dl = Dynamic_Load(self.driver)
+        dl.dynamic_load()
 
+    def test_FileDownload(self):
+        fd = File_Download(self.driver)
+        fd.File_Download()
 
+    def test_FileUpload(self):
+        fu = File_Upload(self.driver)
+        fu.fileUpload()
 
+    def test_FloatingMenu(self):
+        ff = FloatingFile(self.driver)
+        ff.floating_file()
+
+    def test_Iframe(self):
+        ifr = IFRAME(self.driver)
+        ifr.iframe()
+
+    def test_MouseHover(self):
+        mh = MouseHover(self.driver)
+        mh.mouseHover()
+
+    def test_JavaScriptAlerts(self):
+        ja = JavaAlert(self.driver)
+        ja.java_alert()
+
+    def test_JavaScriptError(self):
+        je = Java_ScriptError(self.driver)
+        je.java_scriptError()
+
+    def test_NewTab(self):
+        nt = NewTab(self.driver)
+        nt.new_Tab()
+
+    def test_NotificationMessage(self):
+        nm = Notification_Message(self.driver)
+        nm.notification_msg()
 
 
 if __name__ == '__main__':
