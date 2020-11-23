@@ -1,9 +1,9 @@
 import time
-
+from Library.Locators import Locator
 
 class Dynamic_Content:
 
-    dynamic_url = 'http://localhost:7080/dynamic_content'
+    dynamic_url = Locator.dynamic_url
 
     def __init__(self, driver):
         self.driver = driver

@@ -30,4 +30,4 @@ class Check_Box(BasePage):
         else:
             self.clicker(ch2)
             print('check box is clicked')
-        
+

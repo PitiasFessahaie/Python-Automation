@@ -1,10 +1,14 @@
 import time
 import logging
+from Library.BasePage import BasePage
 
-class JavaAlert:
+class JavaAlert(BasePage):
+
+
 
     def __init__(self, driver):
         self.driver = driver
+        super.__init__(driver)
 
     def java_alert(self):
         self.driver.get('http://localhost:7080/javascript_alerts')

@@ -50,3 +50,19 @@ class Locator:
     file_path = '/Users/pitiasfessahaie/Downloads/some-file.txt'
     url_Filedownload = 'http://localhost:7080/download'
     file = '//*[@id="content"]/div/a[1]'
+
+    # Dynamic Content
+    dynamic_url = 'http://localhost:7080/dynamic_content'
+
+    # Dynamic Load
+    url_dynamic_load = "http://localhost:7080/dynamic_loading/2"
+
+    # File_Upload
+    file_name = '/Users/pitiasfessahaie/Downloads/some-file.txt'
+    url_fileUpload = 'http://localhost:7080/upload'
+    attach_btn = '#file-upload'
+    submit_btn = '#file-submit'
+
+    # Floating_File
+    url_FloatingFile = 'http://localhost:7080/floating_menu'
+    scroll_elem = '//*[@id="menu"]/ul/li[2]/a'
